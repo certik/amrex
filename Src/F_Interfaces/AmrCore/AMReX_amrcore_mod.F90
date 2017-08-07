@@ -73,7 +73,6 @@ module amrex_amrcore_module
 
      integer(c_int) function amrex_fi_get_max_level (amrcore) bind(c)
        import
-       implicit none
        type(c_ptr), value :: amrcore
      end function amrex_fi_get_max_level
 
@@ -86,7 +85,6 @@ module amrex_amrcore_module
 
      integer(c_int) function amrex_fi_get_finest_level (amrcore) bind(c)
        import
-       implicit none
        type(c_ptr), value :: amrcore
      end function amrex_fi_get_finest_level
 
