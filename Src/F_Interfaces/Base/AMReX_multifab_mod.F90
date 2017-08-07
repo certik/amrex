@@ -122,13 +122,11 @@ module amrex_multifab_module
 
      integer(c_int) function amrex_fi_multifab_ncomp (mf) bind(c)
        import
-       implicit none
        type(c_ptr), value :: mf
      end function amrex_fi_multifab_ncomp
 
      integer(c_int) function amrex_fi_multifab_ngrow (mf) bind(c)
        import
-       implicit none
        type(c_ptr), value :: mf
      end function amrex_fi_multifab_ngrow
 

@@ -72,7 +72,6 @@ module amrex_parmparse_module
 
      integer(c_int) function amrex_parmparse_get_counts (pp, name) bind(c)
        import
-       implicit none
        type(c_ptr), value :: pp
        character(kind=c_char), intent(in) :: name(*)       
      end function amrex_parmparse_get_counts
